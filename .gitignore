@@ -1,0 +1,10 @@
+.DS_Store
+_private/
+preview/
+*.pdf
+*.ips
+*.ipa
+*.p12
+*.mobileprovision
+.env
+.env.*

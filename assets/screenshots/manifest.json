@@ -1,0 +1,18 @@
+[
+  {
+    "file": "assets/screenshots/missions.png",
+    "caption": "Optional manually entered mission rules; the app does not read platform mission status.",
+    "kind": "actual iPhone screenshot",
+    "demo": false,
+    "processing": "Removed hidden EXIF/XMP/text metadata; image data and color profile retained. No visual edits.",
+    "sha256": "381b5a56ac3d6a8d5750a50e2c2e674bbd5e40823df2a8a4c314b42b6b604619"
+  },
+  {
+    "file": "assets/screenshots/offer-import.png",
+    "caption": "Photos or PNG/JPEG files can be used for an explicit offer check.",
+    "kind": "actual iPhone screenshot",
+    "demo": false,
+    "processing": "Removed hidden EXIF/XMP/text metadata; image data and color profile retained. No visual edits.",
+    "sha256": "8191a3f871598f36726d282009ab7d205bd92349e693c6b6f04f9be1fb5c9f30"
+  }
+]
