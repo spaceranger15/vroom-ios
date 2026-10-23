@@ -1,16 +1,16 @@
 <p align="center"><img src="assets/cover.svg" alt="Vroom: see the run behind the payout. A personal iPhone prototype." width="100%"></p>
 
-# Vroom · Delivery Shift Tracker
+# Vroom
 
-An iPhone prototype built around a practical question: **what did a delivery run
-leave after estimated fuel and recorded costs?** Vroom brings run tracking,
-earnings, fuel records and user-triggered offer checks into one local workflow.
+An iPhone app for tracking delivery shifts, mileage, fuel costs, and offers.
 
-**Working personal prototype · AI-assisted development · Source kept private · Not an App Store release**
+I built Vroom to keep track of delivery work and compare offers with what they
+would cost in fuel and time. It records runs, keeps fuel purchases separate
+from estimated fuel use, and reads offer screenshots with Apple Vision.
 
 [Explore the screens](docs/screenshots.md) · [Architecture](docs/architecture.md) · [Validation & limitations](docs/validation.md)
 
-## A run, from start to review
+## Shift tracking
 
 1. **Start, pause, resume, stop.** Track accepted GPS mileage and active work time;
    pauses are excluded. Waiting during an active run counts as work.
@@ -21,7 +21,7 @@ earnings, fuel records and user-triggered offer checks into one local workflow.
 4. **Review the day.** Compare work time, mileage, gross earnings and estimated
    after-cost earnings; copy a daily summary or export CSV.
 
-## Offer context without automatic decisions
+## Offer checks
 
 A user-configured Shortcut can send a screenshot from Grubhub for an explicit
 on-device OCR check. Vroom compares readable offer values against saved hourly,
@@ -37,7 +37,7 @@ These are **rule-based estimates**, not a trained earnings predictor. Vroom does
 not continuously watch another app, know its online state, or accept/reject
 orders. A shortcut and permissions must be configured by the user.
 
-## Fuel records and vehicle assumptions
+## Fuel and vehicles
 
 Fuel logging offers a pump-photo entry point and manual entry. Apple Vision
 suggests numbers when it can associate them with labels; **gallons and total
@@ -48,7 +48,7 @@ The garage keeps vehicle profiles and a delivery MPG assumption. A separate
 whole-car baseline can use valid full-tank odometer intervals. It includes
 personal driving and is **not a measurement of delivery-only MPG**.
 
-## Selected interface screens
+## Screenshots
 
 Actual iPhone captures of the offer-import form and empty mission setup.
 The public gallery excludes earnings, driving history, fuel transactions,
@@ -62,7 +62,7 @@ vehicle profiles, personal settings and the iPhone Home Screen.
 </tr>
 </table>
 
-## Implementation at a glance
+## Built with
 
 | Area | Implementation |
 |---|---|
@@ -75,7 +75,7 @@ vehicle profiles, personal settings and the iPhone Home Screen.
 | Portability | CSV exports and complete local JSON backup/merge restore |
 | Validation | 13 passing core regression checks at the reviewed source checkpoint |
 
-## What this project demonstrates
+## Development
 
 - Turning real delivery-run feedback into a focused native workflow.
 - Modeling recorded earnings separately from assumptions and cash purchases.
@@ -104,7 +104,7 @@ pipeline, and their upstream models/inference engines are not original work.
 
 ## About this repository
 
-This is a **portfolio showcase**, containing documentation and screenshots only.
+This repository contains documentation and screenshots of Vroom.
 There is no app source, installable binary, customer dataset, API key or local
 app backup here. Only empty input/setup screens are included; [media notes](docs/media-notes.md) explain the selection. Personal records and earlier private screenshot history are not included.
 
